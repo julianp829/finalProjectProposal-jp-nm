@@ -89,35 +89,22 @@ app.get('/test', (request, response) => {
 })
 
 // Return Batman as JSON.
-var spiderMan = {
-	"firstName":"Bruce",
-	"lastName":"Wayne",
-	"preferredName":"Batman",
-	"email":"darkknight@lewisu.edu",
-	"phoneNumber":"800-bat-mann",
-	"city":"Gotham",
-	"state":"NJ",
-	"zip":"07101",
-	"lat":"40.73",
-	"lng":"-74.17",
-	"favoriteHobby":"Flying",
-	"class":"cpsc-24700-001",
-	"room":"AS-104-A",
-	"startTime":"2 PM CT",
-	"seatNumber":"",
-	"inPerson":[
-		"Monday",
-		"Wednesday"
-	],
-	"virtual":[
-		"Friday"
-	]
+var finalProjectProposal = {
+	"Product Name":"Currency Converter",
+	"Team Members":"Julian Pala and Nilo Manola",
+	"Application Overview":"1 input box for numbers and 2 drop down menus for each currency. The user will input a currency amount, choose a currency from the menu, and click done. Then the conversion will complete. ",
+	"Technology Overview":"Java, JFrames, maybe hosting with JSON, and some more that will be implemented later on.",
+	"Proposal last updated":"4/24/22",
+	"Feature List":"Convert Currency, make a good design, drop down menus, easy access inputs.",
+	"Future Feature List":"Constant updates for currency value, more currencies.",
+	"Basic Technical Features":"Jpanel design and overall implementation, JButton, possibly a JSON implementation for updated currency value",
+	"Advanced Technical Features":"JComboBoxes, input fields, drop-down menus, and possibly constantly updated conversion values."
 }
 
-app.get('/batman', (request, response) => {
-	console.log('Calling "/batman" on the Node.js server.')
+app.get('/finalProjectProposal', (request, response) => {
+	console.log('Calling "/finalProjectProposal" on the Node.js server.')
 	response.type('application/json')
-	response.send(JSON.stringify(spiderMan, null, 4))
+	response.send(JSON.stringify(finalProjectProposal, null, 4))
 })
 
 // Custom 404 page.
