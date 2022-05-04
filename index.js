@@ -102,8 +102,7 @@ var finalProjectProposal = {
 	"Original Plan":"Implement a constantly updating currency converter with a simple design.",
 	"Delivered":"We did make a currency converter, but it isn't constantly updating. Some things that we tried included api, parsing a JSON, and static numbers.",
 	"Next Features":"We would like to add a constantly updating currency exchange rate, so that the conversions are 100% accurate to the current date. Also, some design imporvements.",
-	"Contact Information":"Julian: jpala829@gmail.com",
-	"Contact Information":"Nilo: Nilodmanola@lewisu.edu"
+	"Contact Information":"Julian: jpala829@gmail.com and Nilo: Nilodmanola@lewisu.edu"
 }
 
 app.get('/finalProjectProposal', (request, response) => {
